@@ -1,0 +1,1 @@
+This is the whitepaper of decentral card network
