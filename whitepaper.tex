@@ -1,6 +1,19 @@
 \documentclass{article}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+%
+\definecolor{awesomeblue}{RGB}{0,74,127}
+\definecolor{awesomebrown}{RGB}{191,99,40}
+\definecolor{awesomeskyblue}{RGB}{0,148,255}
+\definecolor{awesomeyellow}{RGB}{236,192,27}
+\definecolor{awesomered}{RGB}{228,36,51}
+\definecolor{awesomeorange}{RGB}{243,119,56}
+\definecolor{awesomewinered}{RGB}{168,34,110}
+\definecolor{boringgreen}{RGB}{130,179,102}
+\definecolor{boringblue}{RGB}{108,142,191}
+\definecolor{boringred}{RGB}{184,84,80}
 %
 % TITLE
 \title{Decentral Card Network}
@@ -76,9 +89,9 @@ The blockchain evaluates both answers and increases the troll\_counter of the pl
 \begin{center}
 	\begin{tabular}{ c | c | c | c | c }
 		& \textcolor{blue}{1} & \textcolor{blue}{2} & \textcolor{blue}{3} & \textcolor{blue}{4} \\ \hline
-		$\textcolor{red}{1}$ & $\textcolor{red}{{}_{---}} \textcolor{blue}{{}^{---}} $ & $\textcolor{blue}{-} $ & $\textcolor{red}{{}_{---}} \textcolor{blue}{{}^{---}}$ & $\textcolor{red}{{}_-} \textcolor{blue}{{}^-}$ \\ \hline
+		$\textcolor{red}{1}$ & $\textcolor{red}{{}_{---}} \textcolor{blue}{{}^{---}} $ & $\textcolor{blue}{-} $ & $\textcolor{red}{{}_{---}} \textcolor{blue}{{}^{---}}$ & $\textcolor{blue}{--}$ \\ \hline
 		$\textcolor{red}{2}$ & $\textcolor{red}{-}$ &  &  & $\textcolor{red}{-}$ \\ \hline
-		$\textcolor{red}{3}$ & $\textcolor{red}{{}_{---}} \textcolor{blue}{{}^{---}}$ &  &  & $\textcolor{red}{{}_-} \textcolor{blue}{{}^-}$ \\ \hline
+		$\textcolor{red}{3}$ & $\textcolor{red}{{}_{---}} \textcolor{blue}{{}^{---}}$ &  &  & $ \textcolor{blue}{-}$ \\ \hline
 		$\textcolor{red}{4}$ &  $\textcolor{red}{{--}}$  &  $\textcolor{blue}{-}$  & $\textcolor{red}{{-}}$ & $\textcolor{red}{{}_-} \textcolor{blue}{{}^-}$ \\ 
 	\end{tabular}
 \end{center}
@@ -138,6 +151,14 @@ s = \frac{m_{UP} +  m_{FE} - m_{OP} - m_{IA}}{games \, played}
 \end{equation}
 %
 If the score $s$ is above $0.1$ the card is approved. Otherwise the card is rejected. If it is rejected, every yes voter and the card's creator lose their fee and the no voters get their fees back doubled.
+%
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{flow.png}
+	\caption{Here the flow of credits, cards and information is depicted. \textcolor{boringgreen}{Green} lines indicate credit flow, \textcolor{boringred}{cinder red} lines indicate card transfers and \textcolor{boringblue}{blue} lines processing of information. The circles indicate actors and processes. The \textcolor{awesomeblue}{blue} circles indicate global credit pools, sources and sinks, The \textcolor{awesomered}{red} circles indicate collateral credits locked up for some time, the \textcolor{awesomeorange}{orange} circles represent actions where users acquire the opportunity to create content, the \textcolor{awesomewinered}{winered} circles display processes where users create content, the \textcolor{awesomebrown}{brown} circles show where players judge cards, \textcolor{awesomeyellow}{yellow} indicates processes, where cards are created and \textcolor{awesomeskyblue}{sky blue} shows the players.
+	}
+	\label{fig1}
+\end{figure}
 %
 \section{Technology}
 %
